@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner and Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsqr/1.4.0/jsqr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="script.js"></script>
+
+
+</head>
+<body>
+    <h1>QR Code Scanner and Generator</h1>
+    <div>
+        <h2>QR Code Generator</h2>
+        <input type="text" id="qr-input" placeholder="Enter text to generate QR Code">
+        <button id="generate-qr">Generate QR Code</button>
+        <canvas id="canvas"></canvas>
+    </div>
+    <div>
+        <h2>QR Code Scanner</h2>
+        <video id="video" width="300" height="200"></video>
+        <button id="start-scan">Start Scanning</button>
+        <button id="stop-scan" style="display:none;">Stop Scanning</button>
+    <div id="scan-result-container">
+        <p id="scan-result"></p>
+    </div>
+
+    </div>
+
+</body>
+</html>
