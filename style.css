@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    transition: background-color 0.3s ease; /* Added transition for dynamic background */
+}
+
+.scanning {
+    background-color: #f0f8ff; /* Light blue background during scanning */
+}
+
+
+h1 {
+    color: #333;
+}
+
+#canvas {
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+video {
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+#video {
+    border: 1px solid black;
+}
+
+.detected {
+    color: green;
+    font-weight: bold;
+}
+
+#canvas.success {
+    border-color: green; /* Change border color to green when QR code is detected */
+    transition: border-color 0.3s ease; /* Added transition for smooth effect */
+}
